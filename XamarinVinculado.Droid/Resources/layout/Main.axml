@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/atualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/atualizar" />
+    <Button
+        android:text="Limpar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/limpar" />
+    <TextView
+        android:text="Arquivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textArquivo" />
+    <TextView
+        android:text="Projeto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textProjeto" />
+    <TextView
+        android:text="Biblioteca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textBiblioteca" />
+</LinearLayout>
