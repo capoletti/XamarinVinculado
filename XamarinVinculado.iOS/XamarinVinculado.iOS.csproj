@@ -95,6 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Implemetations\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -114,6 +115,14 @@
     <Compile Include="..\XamarinVinculado.Arquivo\ArquivoVinculado.cs">
       <Link>ArquivoVinculado.cs</Link>
     </Compile>
+    <Compile Include="Implemetations\ArquivoBiblioteca.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XamarinVinculado.PLC\XamarinVinculado.PLC.csproj">
+      <Project>{1E8995D3-F119-499F-82B8-A8CA74B36C11}</Project>
+      <Name>XamarinVinculado.PLC</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="..\XamarinVinculado.Projeto\XamarinVinculado.Projeto.projitems" Label="Shared" Condition="Exists('..\XamarinVinculado.Projeto\XamarinVinculado.Projeto.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

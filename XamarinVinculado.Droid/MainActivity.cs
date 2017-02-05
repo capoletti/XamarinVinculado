@@ -31,6 +31,8 @@ namespace XamarinVinculado.Droid
 			TextView tProjeto = FindViewById<TextView>(Resource.Id.textProjeto);
 			TextView tBiblioteca = FindViewById<TextView>(Resource.Id.textBiblioteca);
 			tArquivo.Text = (new Arquivo.ArquivoVinculado()).RetornarValor(count);
+			tProjeto.Text = (new Projeto.ArquivoProjeto()).RetornarValor(count);
+			tBiblioteca.Text = (new ArquivoBiblioteca()).RetornarValor(count);
 		}
 
 		private void limpar()

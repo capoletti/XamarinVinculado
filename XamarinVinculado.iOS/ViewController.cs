@@ -28,6 +28,8 @@ namespace XamarinVinculado.iOS
 		{
 			contador++;
 			textoArquivo.Text = (new Arquivo.ArquivoVinculado()).RetornarValor(contador);
+			textoProjeto.Text = (new Projeto.ArquivoProjeto()).RetornarValor(contador);
+			textoBiblioteca.Text = (new ArquivoBiblioteca()).RetornarValor(contador);
 		}
 
 		partial void Limpar_TouchUpInside(UIButton sender)
