@@ -8,7 +8,7 @@ namespace XamarinVinculado.Arquivo
 			string valor = "arquivo: " + contador;
 
 #if __ANDROID__
-			valor += " - Android: " + Android.OS.Build.VERSION.Codename;
+			valor += " - V2 Android: " + Android.OS.Build.VERSION.Codename;
 #elif __IOS__
 			valor += " - iOS: " + UIKit.UIDevice.CurrentDevice.SystemVersion;
 			#endif
